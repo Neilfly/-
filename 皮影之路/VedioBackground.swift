@@ -9,12 +9,15 @@
 import UIKit
 import AVKit
 
+
 class VedioBackground: AVPlayerViewController {
+    
+    var sPlayer: AVAudioPlayer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let player = AVPlayer(url: Bundle.main.url(forResource: "shanghai", withExtension: "mp4")!)
+        let player = AVPlayer(url: Bundle.main.url(forResource: "MenuVideo", withExtension: "mp4")!)
         
         player.play()
         player.preventsDisplaySleepDuringVideoPlayback = true
@@ -22,6 +25,17 @@ class VedioBackground: AVPlayerViewController {
         // Do any additional setup after loading the view.
         self.player = player
         
+        
+        let url = Bundle.main.url(forResource: "Alton_Wang_New_Hope", withExtension: "mp3")
+        do {
+            sPlayer = try AVAudioPlayer(contentsOf: url!)
+            sPlayer.play()
+            sPlayer.numberOfLoops = -1
+        }
+            
+        catch {
+            print(error)
+        }
         
     }
     
