@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D16845E324E3CE8A009CE3C2 /* VedioBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16845E224E3CE8A009CE3C2 /* VedioBackground.swift */; };
+		D16845E524E3CF31009CE3C2 /* shanghai.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D16845E424E3CF31009CE3C2 /* shanghai.mp4 */; };
 		D1E38F2A24E38ECD00F3D33B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E38F2924E38ECD00F3D33B /* AppDelegate.swift */; };
 		D1E38F2C24E38ECD00F3D33B /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = D1E38F2B24E38ECD00F3D33B /* art.scnassets */; };
 		D1E38F2E24E38ECD00F3D33B /* ARPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E38F2D24E38ECD00F3D33B /* ARPage.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D16845E224E3CE8A009CE3C2 /* VedioBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VedioBackground.swift; sourceTree = "<group>"; };
+		D16845E424E3CF31009CE3C2 /* shanghai.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = shanghai.mp4; sourceTree = "<group>"; };
 		D1E38F2624E38ECD00F3D33B /* 皮影之路.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "皮影之路.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E38F2924E38ECD00F3D33B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1E38F2B24E38ECD00F3D33B /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -62,10 +66,12 @@
 				D1E38F2B24E38ECD00F3D33B /* art.scnassets */,
 				D1E38F2D24E38ECD00F3D33B /* ARPage.swift */,
 				D1E38F3D24E391C200F3D33B /* MenuPage.swift */,
+				D16845E224E3CE8A009CE3C2 /* VedioBackground.swift */,
 				D1E38F2F24E38ECD00F3D33B /* Main.storyboard */,
 				D1E38F3224E38ECE00F3D33B /* Assets.xcassets */,
 				D1E38F3424E38ECE00F3D33B /* LaunchScreen.storyboard */,
 				D1E38F3724E38ECE00F3D33B /* Info.plist */,
+				D16845E424E3CF31009CE3C2 /* shanghai.mp4 */,
 			);
 			path = "皮影之路";
 			sourceTree = "<group>";
@@ -128,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D16845E524E3CF31009CE3C2 /* shanghai.mp4 in Resources */,
 				D1E38F2C24E38ECD00F3D33B /* art.scnassets in Resources */,
 				D1E38F3624E38ECE00F3D33B /* LaunchScreen.storyboard in Resources */,
 				D1E38F3324E38ECE00F3D33B /* Assets.xcassets in Resources */,
@@ -145,6 +152,7 @@
 				D1E38F3E24E391C200F3D33B /* MenuPage.swift in Sources */,
 				D1E38F2E24E38ECD00F3D33B /* ARPage.swift in Sources */,
 				D1E38F2A24E38ECD00F3D33B /* AppDelegate.swift in Sources */,
+				D16845E324E3CE8A009CE3C2 /* VedioBackground.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

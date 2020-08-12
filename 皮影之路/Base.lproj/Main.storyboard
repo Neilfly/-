@@ -14,13 +14,38 @@
                     <view key="view" contentMode="scaleToFill" id="XG2-NX-f1f">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sKa-em-Xej">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <connections>
+                                    <segue destination="JaC-uZ-4VX" kind="embed" id="M8Z-zs-XzY"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sKa-em-Xej" firstAttribute="top" secondItem="5Bs-Of-xhP" secondAttribute="top" id="415-DU-dWT"/>
+                            <constraint firstItem="sKa-em-Xej" firstAttribute="centerX" secondItem="XG2-NX-f1f" secondAttribute="centerX" id="Lus-qI-opN"/>
+                            <constraint firstItem="sKa-em-Xej" firstAttribute="leading" secondItem="XG2-NX-f1f" secondAttribute="leadingMargin" constant="-60" id="T4T-78-ris"/>
+                            <constraint firstItem="sKa-em-Xej" firstAttribute="centerY" secondItem="XG2-NX-f1f" secondAttribute="centerY" id="dqu-Ab-hvW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="5Bs-Of-xhP"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Arp-qp-X1Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-695" y="138"/>
+            <point key="canvasLocation" x="-695.08928571428567" y="137.68115942028987"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="fXM-PW-ihC">
+            <objects>
+                <avPlayerViewController showsPlaybackControls="NO" videoGravity="AVLayerVideoGravityResizeAspectFill" id="JaC-uZ-4VX" customClass="VedioBackground" customModule="皮影之路" customModuleProvider="target" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </avPlayerViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AU9-gs-LgI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-695" y="986"/>
         </scene>
         <!--Page-->
         <scene sceneID="tXr-a1-R10">
