@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Menu-->
+        <!--Menu Page-->
         <scene sceneID="Quf-oG-3au">
             <objects>
-                <viewController id="vuR-Y6-7k6" customClass="Menu" customModule="皮影之路" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vuR-Y6-7k6" customClass="MenuPage" customModule="皮影之路" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XG2-NX-f1f">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,10 +22,10 @@
             </objects>
             <point key="canvasLocation" x="-695" y="138"/>
         </scene>
-        <!--View Controller-->
+        <!--Page-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="ARPage" customModule="皮影之路" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
