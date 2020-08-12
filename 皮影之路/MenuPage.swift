@@ -10,12 +10,9 @@ import UIKit
 
 class MenuPage: UIViewController {
     
-    let button = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        button.backgroundColor = #colorLiteral(red: 1, green: 0.182669729, blue: 0.4321816862, alpha: 1)
-        self.view.addSubview(button)
+        
         // Do any additional setup after loading the view.
     }
     
