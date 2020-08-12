@@ -18,13 +18,19 @@ class VedioBackground: AVPlayerViewController {
         
         player.play()
         player.preventsDisplaySleepDuringVideoPlayback = true
-        
+        loopVideo(videoPlayer: player)
         // Do any additional setup after loading the view.
         self.player = player
         
         
     }
     
+    func loopVideo(videoPlayer: AVPlayer) {
+        NotificationCenter.default.addObserver(forName: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: nil, queue: nil) { notification in
+            videoPlayer.seek(to: CMTime.zero)
+            videoPlayer.play()
+        }
+    }
 
     /*
     // MARK: - Navigation
