@@ -17,7 +17,14 @@ class MainGameViewController: UIViewController {
     }
     
     @IBAction func back(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        let alert = UIAlertController(title: "是否返回主页？", message: nil, preferredStyle: .alert)
+        let action1 = UIAlertAction(title: "是", style: .default) { (action) in
+            self.dismiss(animated: true, completion: nil)
+        }
+        let action2 = UIAlertAction(title: "否", style: .destructive, handler: nil)
+        alert.addAction(action1)
+        alert.addAction(action2)
+        present(alert, animated: true, completion: nil)
     }
     
     
