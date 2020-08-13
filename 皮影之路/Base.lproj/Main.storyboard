@@ -1,26 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vuR-Y6-7k6">
-    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <device id="ipad10_2" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--AV Player View Controller-->
+        <scene sceneID="Vao-KM-Wve">
+            <objects>
+                <avPlayerViewController showsPlaybackControls="NO" videoGravity="AVLayerVideoGravityResizeAspect" id="e3H-fI-OlH" customClass="MainGame" customModule="皮影之路" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CFz-Yo-smT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="71" y="-601"/>
+        </scene>
+        <!--Main Game View Controller-->
+        <scene sceneID="Z63-6c-C1d">
+            <objects>
+                <viewController storyboardIdentifier="MainGameViewController" id="tCH-jE-bsQ" customClass="MainGameViewController" customModule="皮影之路" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tH8-TT-XSM">
+                        <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eUN-t6-4PY">
+                                <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="e3H-fI-OlH" kind="embed" id="dEE-3p-uya"/>
+                                </connections>
+                            </containerView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="返回" translatesAutoresizingMaskIntoConstraints="NO" id="pMh-5C-hNh">
+                                <rect key="frame" x="20" y="35" width="95" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWx-II-0u9">
+                                <rect key="frame" x="20" y="35" width="95" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="back:" destination="tCH-jE-bsQ" eventType="touchUpInside" id="CmG-gg-jzt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="YMn-I0-gC2"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="U07-8h-9Qh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yWg-RO-IBj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-696.11111111111109" y="-601.48148148148141"/>
+        </scene>
         <!--Menu Page-->
         <scene sceneID="Quf-oG-3au">
             <objects>
                 <viewController id="vuR-Y6-7k6" customClass="MenuPage" customModule="皮影之路" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XG2-NX-f1f">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sKa-em-Xej">
-                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <rect key="frame" x="-40" y="0.0" width="1160" height="810"/>
                                 <connections>
                                     <segue destination="JaC-uZ-4VX" kind="embed" id="M8Z-zs-XzY"/>
                                 </connections>
                             </containerView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="开始探索" translatesAutoresizingMaskIntoConstraints="NO" id="uAb-xB-erj">
+                                <rect key="frame" x="519" y="226" width="43" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="模拟体验" translatesAutoresizingMaskIntoConstraints="NO" id="3g5-Kh-BEn">
+                                <rect key="frame" x="657" y="226" width="47" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3C-UB-rJQ">
+                                <rect key="frame" x="657" y="226" width="46" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="BV1-FR-VrT" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="2mJ-Sx-zth"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYY-CK-Rjs">
+                                <rect key="frame" x="519" y="226" width="46" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="turnAndPause:" destination="vuR-Y6-7k6" eventType="touchUpInside" id="TcE-Ut-yN0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -34,7 +100,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Arp-qp-X1Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-695.08928571428567" y="137.68115942028987"/>
+            <point key="canvasLocation" x="-695.55555555555554" y="137.03703703703704"/>
         </scene>
         <!--AV Player View Controller-->
         <scene sceneID="fXM-PW-ihC">
@@ -52,12 +118,23 @@
             <objects>
                 <viewController id="BV1-FR-VrT" customClass="ARPage" customModule="皮影之路" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
-                                <rect key="frame" x="44" y="0.0" width="808" height="393"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
                             </arscnView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="返回" translatesAutoresizingMaskIntoConstraints="NO" id="E9W-H2-dwt">
+                                <rect key="frame" x="20" y="35" width="95" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l01-OD-896">
+                                <rect key="frame" x="20" y="35" width="95" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="returnB:" destination="BV1-FR-VrT" eventType="touchUpInside" id="lch-MG-aM7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -74,7 +151,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="84" y="138"/>
+            <point key="canvasLocation" x="83.888888888888886" y="137.77777777777777"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="开始探索" width="15" height="70.5"/>
+        <image name="模拟体验" width="15" height="70.5"/>
+        <image name="返回" width="39" height="24.5"/>
+    </resources>
 </document>
