@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D10CABE924E5A69C00700EDE /* shanghainew.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D10CABE824E5A69C00700EDE /* shanghainew.mp4 */; };
 		D1532EEC24E42463007003A0 /* MenuVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D1532EEB24E42463007003A0 /* MenuVideo.mp4 */; };
 		D1532EEE24E427D6007003A0 /* Alton_Wang_New_Hope.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1532EED24E427D6007003A0 /* Alton_Wang_New_Hope.mp3 */; };
 		D16845E324E3CE8A009CE3C2 /* VedioBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16845E224E3CE8A009CE3C2 /* VedioBackground.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D10CABE824E5A69C00700EDE /* shanghainew.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = shanghainew.mp4; sourceTree = "<group>"; };
 		D1532EEB24E42463007003A0 /* MenuVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = MenuVideo.mp4; sourceTree = "<group>"; };
 		D1532EED24E427D6007003A0 /* Alton_Wang_New_Hope.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Alton_Wang_New_Hope.mp3; sourceTree = "<group>"; };
 		D16845E224E3CE8A009CE3C2 /* VedioBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VedioBackground.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				D1E38F3424E38ECE00F3D33B /* LaunchScreen.storyboard */,
 				D1E38F3724E38ECE00F3D33B /* Info.plist */,
 				D1532EEB24E42463007003A0 /* MenuVideo.mp4 */,
+				D10CABE824E5A69C00700EDE /* shanghainew.mp4 */,
 				D1EA29BA24E4DCA200486161 /* shanghai.mp4 */,
 				D1532EED24E427D6007003A0 /* Alton_Wang_New_Hope.mp3 */,
 				D1EA29BE24E4E13C00486161 /* Audiomachine_Promised_Land.mp3 */,
@@ -149,6 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D10CABE924E5A69C00700EDE /* shanghainew.mp4 in Resources */,
 				D1EA29BF24E4E13C00486161 /* Audiomachine_Promised_Land.mp3 in Resources */,
 				D1E38F2C24E38ECD00F3D33B /* art.scnassets in Resources */,
 				D1532EEE24E427D6007003A0 /* Alton_Wang_New_Hope.mp3 in Resources */,

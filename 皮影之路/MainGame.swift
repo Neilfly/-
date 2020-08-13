@@ -16,7 +16,7 @@ class MainGame: AVPlayerViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let player = AVPlayer(url: Bundle.main.url(forResource: "shanghai", withExtension: "mp4")!)
+        let player = AVPlayer(url: Bundle.main.url(forResource: "shanghainew", withExtension: "mp4")!)
         player.play()
         player.preventsDisplaySleepDuringVideoPlayback = true
         
