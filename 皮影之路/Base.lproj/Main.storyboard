@@ -70,11 +70,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="模拟体验" translatesAutoresizingMaskIntoConstraints="NO" id="3g5-Kh-BEn">
-                                <rect key="frame" x="657" y="226" width="47" height="128"/>
+                                <rect key="frame" x="600" y="226" width="47" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3C-UB-rJQ">
-                                <rect key="frame" x="657" y="226" width="46" height="128"/>
+                                <rect key="frame" x="600" y="226" width="47" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="BV1-FR-VrT" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="2mJ-Sx-zth"/>
@@ -86,6 +86,22 @@
                                 <connections>
                                     <action selector="turnAndPause:" destination="vuR-Y6-7k6" eventType="touchUpInside" id="TcE-Ut-yN0"/>
                                 </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="自制人物" translatesAutoresizingMaskIntoConstraints="NO" id="KpZ-g8-N0F">
+                                <rect key="frame" x="681" y="226" width="43" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQH-Dd-ouX">
+                                <rect key="frame" x="681" y="226" width="43" height="127"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="基本设置" translatesAutoresizingMaskIntoConstraints="NO" id="9Ab-4y-bbT">
+                                <rect key="frame" x="762" y="225" width="32" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFc-ks-Sq0">
+                                <rect key="frame" x="762" y="226" width="32" height="127"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -111,7 +127,7 @@
                 </avPlayerViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AU9-gs-LgI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-695" y="986"/>
+            <point key="canvasLocation" x="-696" y="942"/>
         </scene>
         <!--Page-->
         <scene sceneID="tXr-a1-R10">
@@ -151,12 +167,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="83.888888888888886" y="137.77777777777777"/>
+            <point key="canvasLocation" x="71" y="137"/>
         </scene>
     </scenes>
     <resources>
+        <image name="基本设置" width="19.5" height="94"/>
         <image name="开始探索" width="15" height="70.5"/>
         <image name="模拟体验" width="15" height="70.5"/>
+        <image name="自制人物" width="19.5" height="94"/>
         <image name="返回" width="39" height="24.5"/>
     </resources>
 </document>
