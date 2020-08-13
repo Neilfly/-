@@ -15,44 +15,36 @@ class MenuPage: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let url = Bundle.main.url(forResource: "Alton_Wang_New_Hope", withExtension: "mp3")
-        do {
-            sPlayer = try AVAudioPlayer(contentsOf: url!)
-            sPlayer.play()
-            sPlayer.numberOfLoops = -1
-        }
-            
-        catch {
-            print(error)
-        }
         // Do any additional setup after loading the view.
+        playMusic()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        let url = Bundle.main.url(forResource: "Alton_Wang_New_Hope", withExtension: "mp3")
-        do {
-            sPlayer = try AVAudioPlayer(contentsOf: url!)
-            sPlayer.play()
-            sPlayer.numberOfLoops = -1
-        }
-            
-        catch {
-            print(error)
-        }
+        playMusic()
     }
     
     @IBAction func turnAndPause(_ sender: Any) {
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let vc = sb.instantiateViewController(withIdentifier: "MainGameViewController") as! MainGameViewController
         vc.modalPresentationStyle = .fullScreen
-        
         self.present(vc, animated: true) {
             self.sPlayer.pause()
         }
     }
     
+    func playMusic() {
+        let url = Bundle.main.url(forResource: "Alton_Wang_New_Hope", withExtension: "mp3")
+        do {
+            sPlayer = try AVAudioPlayer(contentsOf: url!)
+            sPlayer.play()
+            sPlayer.numberOfLoops = -1
+        }
+            
+        catch {
+            print(error)
+        }
+    }
     /*
     // MARK: - Navigation
 
