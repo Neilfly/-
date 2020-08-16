@@ -11,6 +11,7 @@
 		D1532EEC24E42463007003A0 /* MenuVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D1532EEB24E42463007003A0 /* MenuVideo.mp4 */; };
 		D1532EEE24E427D6007003A0 /* Alton_Wang_New_Hope.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1532EED24E427D6007003A0 /* Alton_Wang_New_Hope.mp3 */; };
 		D16845E324E3CE8A009CE3C2 /* VedioBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16845E224E3CE8A009CE3C2 /* VedioBackground.swift */; };
+		D18E556224E83C5200906F26 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18E556124E83C5200906F26 /* model.swift */; };
 		D1E38F2A24E38ECD00F3D33B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E38F2924E38ECD00F3D33B /* AppDelegate.swift */; };
 		D1E38F2C24E38ECD00F3D33B /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = D1E38F2B24E38ECD00F3D33B /* art.scnassets */; };
 		D1E38F2E24E38ECD00F3D33B /* ARPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E38F2D24E38ECD00F3D33B /* ARPage.swift */; };
@@ -29,6 +30,7 @@
 		D1532EEB24E42463007003A0 /* MenuVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = MenuVideo.mp4; sourceTree = "<group>"; };
 		D1532EED24E427D6007003A0 /* Alton_Wang_New_Hope.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Alton_Wang_New_Hope.mp3; sourceTree = "<group>"; };
 		D16845E224E3CE8A009CE3C2 /* VedioBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VedioBackground.swift; sourceTree = "<group>"; };
+		D18E556124E83C5200906F26 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
 		D1E38F2624E38ECD00F3D33B /* 皮影之路.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "皮影之路.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E38F2924E38ECD00F3D33B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1E38F2B24E38ECD00F3D33B /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -55,6 +57,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D10CABEA24E6D60800700EDE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D1E38F2D24E38ECD00F3D33B /* ARPage.swift */,
+				D1E38F3D24E391C200F3D33B /* MenuPage.swift */,
+				D16845E224E3CE8A009CE3C2 /* VedioBackground.swift */,
+				D1EA29BC24E4DE0C00486161 /* MainGameViewController.swift */,
+				D1EA29B824E4DC1D00486161 /* MainGame.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D18E556024E83C3D00906F26 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D1E38F2F24E38ECD00F3D33B /* Main.storyboard */,
+				D1E38F3424E38ECE00F3D33B /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D18E556324E83C5700906F26 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D18E556124E83C5200906F26 /* model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D1E38F1D24E38ECD00F3D33B = {
 			isa = PBXGroup;
 			children = (
@@ -76,14 +107,10 @@
 			children = (
 				D1E38F2924E38ECD00F3D33B /* AppDelegate.swift */,
 				D1E38F2B24E38ECD00F3D33B /* art.scnassets */,
-				D1E38F2D24E38ECD00F3D33B /* ARPage.swift */,
-				D1E38F3D24E391C200F3D33B /* MenuPage.swift */,
-				D16845E224E3CE8A009CE3C2 /* VedioBackground.swift */,
-				D1EA29BC24E4DE0C00486161 /* MainGameViewController.swift */,
-				D1EA29B824E4DC1D00486161 /* MainGame.swift */,
+				D10CABEA24E6D60800700EDE /* Controllers */,
+				D18E556024E83C3D00906F26 /* View */,
+				D18E556324E83C5700906F26 /* Model */,
 				D1E38F3224E38ECE00F3D33B /* Assets.xcassets */,
-				D1E38F2F24E38ECD00F3D33B /* Main.storyboard */,
-				D1E38F3424E38ECE00F3D33B /* LaunchScreen.storyboard */,
 				D1E38F3724E38ECE00F3D33B /* Info.plist */,
 				D1532EEB24E42463007003A0 /* MenuVideo.mp4 */,
 				D10CABE824E5A69C00700EDE /* shanghainew.mp4 */,
@@ -176,6 +203,7 @@
 				D1E38F2A24E38ECD00F3D33B /* AppDelegate.swift in Sources */,
 				D1EA29BD24E4DE0C00486161 /* MainGameViewController.swift in Sources */,
 				D16845E324E3CE8A009CE3C2 /* VedioBackground.swift in Sources */,
+				D18E556224E83C5200906F26 /* model.swift in Sources */,
 				D1EA29B924E4DC1D00486161 /* MainGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
